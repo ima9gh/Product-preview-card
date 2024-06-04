@@ -1,0 +1,112 @@
+/* CSS Document */
+@font-face{
+	font-family: Montserrat-Medium;
+	src: url(static/Montserrat-Medium.ttf);
+}
+@font-face{
+	font-family: Fraunces_144pt-Bold;
+	src: url(static/Fraunces_144pt-Bold.ttf);
+}
+@font-face{
+	font-family: Montserrat-Bold;
+	src: url(static/Montserrat-Bold.ttf);
+}
+
+body{
+	background-color: hsl(30, 38%, 92%);
+	font-size: 14px;
+	font-family: Montserrat-Medium;
+	height: 637px;
+	width: 1440px;
+	min-height: 100vh;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.left{
+	margin-top: 2px;
+}
+
+.left .img img{
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+    width: 300px;
+	height: 450px;
+}
+
+.right{
+	background-color: white;
+	width: 240px;
+	height: 390px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 30px;
+}
+
+.right .topd{
+
+	color: hsl(228, 12%, 48%);
+	font-size: 13px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.right h1{
+	color: hsl(212, 21%, 14%);
+	font-size: 2.5em;
+	font-family: Fraunces_144pt-Bold;
+	line-height: 35px;
+}
+
+.right .caption{
+	margin-top: 5px;
+	color: hsl(228, 12%, 48%);
+	line-height: 23px;
+}
+
+.right .prices{
+	margin: 25px 0px 25px 0px;
+	display: flex;
+	align-items: center;
+}
+
+.right .prices .price{
+	color: hsl(158, 36%, 37%);
+	float: left;
+	font-size: 2.3em;
+	font-family: Fraunces_144pt-Bold;
+	font-weight: 700;
+}
+
+.right .prices .offprice{
+	margin-left: 20px;
+	color: hsl(228, 12%, 48%);
+	font-size: .9em;
+}
+
+.right button{
+	background-color: hsl(158, 36%, 37%);
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	width: 100%;
+}
+
+.right .but{
+	color: hsl(0, 0%, 100%);
+	font-family: Montserrat-Bold;
+}
+
+.right button:hover{
+	background-color: hsl(158, 36%, 19%);
+	cursor: pointer;
+}
