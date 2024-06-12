@@ -19,12 +19,13 @@ body{
 	height: 637px;
 	width: 100%;
 	min-height: 100vh;
-    display: flex;
+        display: flex;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	marjin: 0;
 }
 
 :root{
