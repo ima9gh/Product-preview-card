@@ -16,16 +16,15 @@ body{
 	background-color: var(--clrCream);
 	font-size: 14px;
 	font-family: Montserrat-Medium;
-	height: 800px;
+	height: 637px;
 	width: 100%;
 	min-height: 100vh;
-        display: flex;
+    display: flex;
 	justify-content: center;
 	align-items: center;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	marjin: 0;
 }
 
 :root{
@@ -46,14 +45,12 @@ body{
 
 .left img{
 	height: 450px;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
+	border-radius: 10px 0 0 10px;
 }
 
 .right{
 	background-color: var(--clrWhite);
-	border-bottom-right-radius: 10px;
-	border-top-right-radius: 10px;
+	border-radius: 0 10px 10px 0;
 	padding: 30px;
 	box-sizing: border-box;
 }
@@ -119,8 +116,31 @@ body{
 }
 
 @media screen and (max-width: 630px){
-	.left img, .right{
-		width: 250px;
+	.row{
+		flex-direction: column;
+		width: 350px;
+		height: 625px;
+	}
+	.left{
+		position: relative;
+		top: 3px;
+	}
+
+	.left img{
+		width: 350px;
+		height: 250px;
+		border-radius: 10px 10px 0 0;
+	}
+
+	.right{
+		height: 380px;
+		width: 350px;	
+		padding: 20px;
+		border-radius: 0 0 10px 10px;
+	}
+
+	.right .prices{
+		margin: 15px 0 20px 0;
 	}
 
 	.right .prices .price{
@@ -128,16 +148,19 @@ body{
 	}
 	
 	.right .topd{
-		font-size: 12px;
+		font-size: 14px;
+		margin-bottom: 0;
 	}
 	
 	.right h1{
-		font-size: 2.3em;
+		font-size: 2.5em;
+		margin: 19px 0 15px 0;
 	}
 
 	.right .caption{
-		font-size: 11.5px;
+		font-size: 14px;
 		line-height: 2.1em;
+		margin: 0;
 	}
 
 	.right .prices .offprice{
@@ -146,85 +169,38 @@ body{
 	}
 }
 
-@media screen and (max-width: 530px){
-	.row{
-		align-items: flex-start;
-	}
-	.left img, .right{
-		width: 200px;
-		height: 340px;
-	}
-
-	.right .prices .price{
-		font-size: 1.4em;
-	}
-	
-	.right .topd{
-		font-size: 9px;
-	}
-	
-	.right h1{
-		font-size: 1.5em;
-		line-height: 25px;
-	}
-
-	.right .caption{
-		font-size: 8.5px;
-	}
-
-	.right button{
-		height: 35px;
-		font-size: 9px;
-    }
-
-	.right .prices .offprice{
-		margin-left: 10px;
-		font-size: .7em;
-	}
-	
-	.right .prices{
-		margin: 17px 0px 20px 0px;
-	}
-}
-
 @media screen and (max-width: 430px){
-	.row{
-		align-items: flex-start;
+	.left img{
+		width: 270px;
+		height: 180px;
 	}
-	.left img, .right{
-		width: 170px;
+
+	.right{
 		height: 300px;
-	}
-
-	.right .prices .price{
-		font-size: 1.3em;
-	}
-	
-	.right .topd{
-		font-size: 7px;
-	}
-	
-	.right h1{
-		font-size: 1.3em;
-		line-height: 25px;
-	}
-
-	.right .caption{
-		font-size: 6.5px;
-		line-height: 2em;
-	}
-
-	.right button{
-		height: 25px;
-		font-size: 8px;
-    }
-
-	.right .prices .offprice{
-		margin-left: 6px;
-		font-size: .5em;
+		width: 270px;	
 	}
 
 	.right .prices{
-		margin: 17px 0px 20px 0px;
+		margin: 10px 0 15px 0;
+	}
+
+	.right .prices .price{
+		font-size: 1.7em;
+	}
+	
+	.right .topd{
+		font-size: 12px;
+	}
+	
+	.right h1{
+		font-size: 1.8em;
+		margin: 10px 0 8px 0;
+		line-height: 30px;
+	}
+
+	.right .caption{
+		font-size: 12px;
+		line-height: 1.5em;
 	}
 }
+	
